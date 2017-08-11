@@ -6,7 +6,7 @@
  * user guide available at https://docs.gradle.org/4.0/userguide/tutorial_java_projects.html
  */
 
-/*
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -27,5 +27,6 @@ dependencies {
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
+    testCompile files('.jpf/69f3ad29e0bfcce17d2efd74a633b5916905b5d8c038e73ab145f545672f70c0/jpf-core/build/jpf.jar')
 }
-*/
+
