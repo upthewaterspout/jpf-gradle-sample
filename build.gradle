@@ -15,7 +15,7 @@
  */
 
 plugins {
-    id "com.github.upthewaterspout.jpf" version "0.1"
+    id "com.github.upthewaterspout.jpf" version "0.2"
 }
 apply plugin: 'java'
 
@@ -24,6 +24,7 @@ repositories {
 }
 
 jpf {
+    properties=['vm.gc': 'true', 'vm.finalize': 'false']
 }
 
 dependencies {
