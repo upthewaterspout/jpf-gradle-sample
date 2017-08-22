@@ -13,20 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-buildscript {
-    repositories {
-        mavenLocal()
-    }
-    dependencies {
-        classpath 'com.github.upthewaterspout.jpfgradle:jpfgradle:0.1-SNAPSHOT'
-    }
-}
 
+plugins {
+    id "com.github.upthewaterspout.jpf" version "0.1"
+}
 apply plugin: 'java'
-apply plugin: 'com.github.upthewaterspout.jpf'
 
 repositories {
     jcenter()
+}
+
+jpf {
 }
 
 dependencies {
